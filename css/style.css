@@ -5,3 +5,90 @@
     padding: 0;
     box-sizing: border-box;
 }
+*,
+*::after
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* Custom variable */
+:root{
+    --primary: rgb(0, 0, 0);
+    --secondary: white;
+    --alternative: hsla(100, 13%, 28%, 0.7);
+    --bgHeaderFooter: rgb(4, 112, 25);
+    --awesome: rgb(137, 175, 72);
+    --bgCAbout: #26d5f4;
+    --mainBox-shadow: .2rem .2rem .1rem .2rem rgb(105, 96, 96, 0.75);
+    --card-box-shadow: .5vw .5vw 1vw rgb(85, 94, 99, 0.9);
+    --text-shadow: .3rem .3rem .4rem rgb(78, 107, 91, 0.5);
+    --mainBg: hsla(145, 85%, 20%, 0.39);
+    --bgImg: linear-gradient(to right, var(--awesome), var(mainBg));
+}
+@property --top-left {
+    syntax: "<percantage>";
+    inherits: false;
+    initial-value: 50%;
+}
+@property --top-right {
+    syntax: "<percantage>";
+    inherits: false;
+    initial-value: 50%;
+}
+@property --bottom--left {
+    syntax: "<percantage>";
+    inherits: false;
+    initial-value: 0%;
+}
+@property --bottom-right {
+    syntax: "<percantage>";
+    inherits: false;
+    initial-value: 0%;
+}
+/* navbar and footer */
+:is(.navbar, footer){
+    background: var(--bgHeaderFooter)
+}
+:is(.nav-link){
+    color: var(--secondary);
+}
+/* Navbar-if you want to adjust the size of a picture in the navbar */
+/* attribute selector make us of [] brackets
+aspect-ratio is a combination of height and width
+on object-fit if cover does not work make use of contain */
+img[alt='logo']{
+    width: 5rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+/* Grid Layout  */
+:is(body){
+    display: grid;
+    text-align: center;
+}
+/* Create three rows , dvh-dynamic viewport height */
+:is(body){
+    grid-template-rows: auto 
+    minmax(100%, 100dvh) auto;
+}
+/* Navbar */
+a{
+    transition: all .5s;
+    &:hover{
+        transform: scale(1.2);
+        text-decoration: underline;
+    }
+}
+.image2{
+    float:left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.text-justify{
+    margin: 40px;
+}
