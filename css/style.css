@@ -1,12 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-*,
-*::after
 *::before{
     margin: 0;
     padding: 0;
@@ -17,10 +12,10 @@
 }
 /* Custom variable */
 :root{
-    --primary: rgb(0, 0, 0);
+    --primary: rgb(18, 18, 18);
     --secondary: white;
     --alternative: hsla(100, 13%, 28%, 0.7);
-    --bgHeaderFooter: rgb(4, 112, 25);
+    --bgHeaderFooter: rgb(13, 162, 43);
     --awesome: rgb(137, 175, 72);
     --bgCAbout: #26d5f4;
     --mainBox-shadow: .2rem .2rem .1rem .2rem rgb(105, 96, 96, 0.75);
@@ -78,17 +73,83 @@ img[alt='logo']{
 }
 /* Navbar */
 a{
-    transition: all .5s;
+    transition: all .4s;
     &:hover{
         transform: scale(1.2);
         text-decoration: underline;
     }
 }
-.image2{
-    float:left;
-    margin-left: 10px;
-    margin-top: 10px;
+body{
+    font-family: "Radio Canada Big", sans-serif;
+    background-color: rgb(50, 51, 50);
 }
-.text-justify{
-    margin: 40px;
+ 
+.flip-picture{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 2rem;
+  }
+  
+  .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-picture:hover .overlay {
+    transform: rotateY(180deg);
+  }
+  
+  .front-picture, .back-picture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .front-picture {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .back-picture {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  span{
+    color: #2eb929;
+  }
+.moved-up{
+    transform: translateY(-300px)
+    
+}
+.card_preview-text{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.img1{
+    float:right;
+    border: solid 5px;
+    border-radius: 25px;
+    border-color: #30f229;
+}
+.img-footer{
+    float: right;
+    margin: 20px;
+
+}
+.shadow{
+    color: rgb(232, 237, 241);
+}
+.btn{
+    color: white;
+    background-color: #2eb929;
+    float: inline-start;
 }
