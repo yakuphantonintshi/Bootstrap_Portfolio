@@ -28,7 +28,7 @@ body{
     font-family: "Radio Canada Big", sans-serif;
     background-color: rgb(50, 51, 50);
 }
-@property --top-left {
+/* @property --top-left {
     syntax: "<percantage>";
     inherits: false;
     initial-value: 50%;
@@ -47,7 +47,7 @@ body{
     syntax: "<percantage>";
     inherits: false;
     initial-value: 0%;
-}
+} */
 /* navbar and footer */
 :is(.navbar, footer){
     background: var(--bgHeaderFooter)
@@ -55,8 +55,10 @@ body{
 :is(.nav-link){
     color: var(--secondary);
 }
-section{
-    scroll-margin-block: 7rem;
+
+.hero{
+    transform: translateY(-4rem);
+    /* scroll-margin-block: 7rem; */
 }
 /* Navbar-if you want to adjust the size of a picture in the navbar */
 /* attribute selector make us of [] brackets
@@ -70,15 +72,21 @@ img[alt='logo']{
 }
 
 /* Grid Layout  */
-:is(body){
+/* :is(body){
     display: grid;
     text-align: center;
-}
-/* Create three rows , dvh-dynamic viewport height */
-:is(body){
+
     grid-template-rows: auto 
     minmax(1fr, 100dvh) auto;
+} */
+
+body {
+    height: 100dvh;
 }
+/* Create three rows , dvh-dynamic viewport height */
+/* :is(body){
+   
+} */
 /* Navbar */
 a{
     transition: all .4s;
@@ -129,7 +137,7 @@ a{
   }
   span{
     color: #2eb929;
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 .moved-up{
     transform: translateY(-300px)
@@ -159,21 +167,41 @@ a{
     float: inline-start;
     padding: 10px 24px;
     cursor: pointer;
-    width: 20%;
+    min-width: 20%;
     display: block;
-    margin: 10px;
 }
 .btn:hover{
     background-color: #2eb929;
 }
 
-.hero-image{
-    height: 400px;
-    aspect-ratio: 1/1;
+.about {
+    /* height: calc(100% - 3rem); */
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 4fr 2fr;
 }
+
+.paragraph {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.image {
+    grid-row: 1/4;
+}
+
+.hero-image{
+    height: 600px;
+    aspect-ratio: 1/1;
+    background: green;
+}
+
 p{
     font-size: 25px;
 }
+
 .btn2{
     color: white;
     background-color: #066403;
@@ -184,9 +212,14 @@ p{
     display: block;
     margin: 10px;
 }
-.resume .btn .btn2 .btn3 p{
+/* .resume .btn .btn2 .btn3 p{
     display: block;
+} */
+
+.resume {
+    height: 100%;
 }
+
 .text-white{
     float: left;
 }
