@@ -125,6 +125,7 @@ body{
   }
   span{
     color: #2eb929;
+    text-decoration: underline;
   }
 .moved-up{
     transform: translateY(-300px)
@@ -152,4 +153,79 @@ body{
     color: white;
     background-color: #2eb929;
     float: inline-start;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 20%;
+    display: block;
+    margin: 10px;
 }
+.btn:hover{
+    background-color: #2eb929;
+}
+
+.hero-image{
+    height: 400px;
+    aspect-ratio: 1/1;
+}
+p{
+    font-size: 25px;
+}
+.btn2{
+    color: white;
+    background-color: #066403;
+    float: inline-start;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 40%;
+    display: block;
+    margin: 10px;
+}
+.resume .btn .btn2 .btn3 p{
+    display: block;
+}
+.text-white{
+    float: left;
+}
+.btn3{
+    color: white;
+    background-color: #066403;
+    float: inline-start;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 40%;
+    display: block;
+    margin: 10px;
+    float: right;
+}
+.Experience{
+    float: right;
+}
+.container2{
+    width: 100%;
+    background-color: #aee1ac;
+}
+.skills{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+.html{
+    width: 85%; 
+    background-color: #066603;
+}
+.css{
+    width: 80%;
+    background-color: #066603;
+}
+.delphi{
+    width: 60%;
+    background-color: #066603;
+}
+
+    
+
+
+
