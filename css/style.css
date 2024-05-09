@@ -24,6 +24,10 @@
     --mainBg: hsla(145, 85%, 20%, 0.39);
     --bgImg: linear-gradient(to right, var(--awesome), var(mainBg));
 }
+body{
+    font-family: "Radio Canada Big", sans-serif;
+    background-color: rgb(50, 51, 50);
+}
 @property --top-left {
     syntax: "<percantage>";
     inherits: false;
@@ -51,6 +55,9 @@
 :is(.nav-link){
     color: var(--secondary);
 }
+section{
+    scroll-margin-block: 7rem;
+}
 /* Navbar-if you want to adjust the size of a picture in the navbar */
 /* attribute selector make us of [] brackets
 aspect-ratio is a combination of height and width
@@ -61,6 +68,7 @@ img[alt='logo']{
     object-fit: cover;
     object-position: center;
 }
+
 /* Grid Layout  */
 :is(body){
     display: grid;
@@ -69,7 +77,7 @@ img[alt='logo']{
 /* Create three rows , dvh-dynamic viewport height */
 :is(body){
     grid-template-rows: auto 
-    minmax(100%, 100dvh) auto;
+    minmax(1fr, 100dvh) auto;
 }
 /* Navbar */
 a{
@@ -78,10 +86,6 @@ a{
         transform: scale(1.2);
         text-decoration: underline;
     }
-}
-body{
-    font-family: "Radio Canada Big", sans-serif;
-    background-color: rgb(50, 51, 50);
 }
  
 .flip-picture{

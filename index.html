@@ -11,10 +11,9 @@
 
 </head>
 <body>
-    <header>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="#Home">
                 <img class="img-thumbnail" src="https://yakuphantonintshi.github.io/myimages/Images/MY LOGO.jpg" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,40 +51,45 @@
             </div>
         </div>
     </nav>
-    <section class="hero">
-        <div class="container border-2 mt-5">
-            <div class="row">
-                <div class="col">
-                    <div class="container flip-picture">
-                        <div class="overlay">
-                          <div class="front-picture">
-                            <img src="https://yakuphantonintshi.github.io/myimages/Images/IMG_5290.jpg" alt="image1" style="width:300px;height:300px;">
-                          </div>
-                          <div class="back-picture">
-                            <img src="https://yakuphantonintshi.github.io/myimages/Images/IMG_0036.jpg" alt="image2" style="width:300px;height:300px;">
-                          </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="col d-flex flex-column justify-content-center">
-                    <p class="h2 text-white">
-                        Hello, I am <span class="text-decoration-none">Yakupha Ntonintshi</span>
-                    </p>
-                    <p class="h5 text-white">
-                        Aspiring Developer
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-</header>
 <!-- End of header, start of main section -->
     <main class="container">
-        <h2><span>About</span></h2>
-        <div class="text">
-            <p class="text-white">I am an aspiring developer at Life Choices. I went to COSAT High School where I was introduced to IT or coding space. I reside in a small township called Khayelitsha. I live with my parents and my two brothers. I saw that not much students or learners are well informed about the coding space so I want to bring some change in townships.
-            </p>
-        </div>
+        <section class="hero" id="Home">
+            <div class="container border-2 mt-5">
+                <div class="row vh-100 justify-content-center align-items-center">
+                    <div class="col">
+                        <div class="container flip-picture">
+                            <div class="overlay">
+                              <div class="front-picture">
+                                <img src="https://yakuphantonintshi.github.io/myimages/Images/IMG_5290.jpg" alt="image1" style="width:300px;height:300px;">
+                              </div>
+                              <div class="back-picture">
+                                <img src="https://yakuphantonintshi.github.io/myimages/Images/IMG_0036.jpg" alt="image2" style="width:300px;height:300px;">
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column">
+                            <p class="h2 text-white">
+                                Hello, I am <span class="text-decoration-none">Yakupha Ntonintshi</span>
+                            </p>
+                            <p class="h5 text-white">
+                                Aspiring Developer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="About">
+
+            <h2><span>About</span></h2>
+            <div class="text">
+                <p class="text-white">I am an aspiring developer at Life Choices. I went to COSAT High School where I was introduced to IT or coding space. I reside in a small township called Khayelitsha. I live with my parents and my two brothers. I saw that not much students or learners are well informed about the coding space so I want to bring some change in townships.
+                </p>
+            </div>
+        </section>
 <section class="resume">
         <h2> <span>Resume</span></h2>
         <div class="d-flex flex-column mb-3">
@@ -152,12 +156,24 @@ I am at Life Choices where I am fully introduced to other different language lik
 </div>
 
 </section>
+<section>
+    <h2><span>Testimonials</span></h2>
+    <img src="https://yakuphantonintshi.github.io/myimages/Images/Khanya.jpg" width="300px" height="300px" alt="Khanya">
+    <p>
+       <span>Khanya Pupuma</span>
+    </p>
+
+       <p class="text-white"> "Yakupha is an excellent young lady, her focus and dedication to her work is simply marvelous. <br>
+    In every work that I've seen her take she always delivers spectacular results, so what more can you want from a person like that? <br>
+Her style and passion for coding is utterly maticulate, to understand it's true magnificence you'd have to inspect it yourself my words <br>
+could only do so much." </p>
+</section>
 
     </main>
     <footer class="container-fluid">
         <div class="row">
         <p class="lead text-white">
-            <!-- span is an inline element, you can style it differently -->
+            
             <span class="shadow">Yakupha's Portfolio</span>
             <span class="text-white">&copy;2024</span>
             <img class="img-footer"src="https://yakuphantonintshi.github.io/myimages/Images/twitter.jpg" alt="Twitter" width="30px" height="30px">
